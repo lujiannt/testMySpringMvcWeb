@@ -11,6 +11,7 @@
     <script data-main="/js/main" src="/js/lib/require.js"></script>
     <script type="text/javascript">
         requirejs(["app/hello/hello"]);
+        requirejs(["app/user/user"]);
 
         var i = 0;
 

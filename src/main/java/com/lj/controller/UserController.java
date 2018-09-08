@@ -1,5 +1,6 @@
 package com.lj.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.lj.model.User;
 import com.lj.service.UserService;
 import org.springframework.stereotype.Controller;
@@ -8,6 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @RequestMapping("user")
@@ -36,4 +39,11 @@ public class UserController {
         return "index";
     }
 
+
+    @RequestMapping("/user_list")
+    public String listUser(int pageNo, int pageSize) {
+        Map<String, Object> params = new HashMap<>();
+        PageInfo<User> pageDate = userService.queryUserByCondition(params, pageNo, pageSize);
+        return "index";
+    }
 }
