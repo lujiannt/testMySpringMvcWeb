@@ -223,4 +223,12 @@ require(["app/basic/basic", "helloEX"], function (basic, helloEX) {
             }
         })
     })
+
+
+    $(".textExportButton").bind("click", function () {
+        // $.get("/hello/export1",function (data) {
+        //     alert(12);
+        // })
+        basicJs.windowLoaction("/hello/export");
+    });
 })

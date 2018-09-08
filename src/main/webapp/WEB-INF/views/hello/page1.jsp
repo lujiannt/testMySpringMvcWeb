@@ -34,6 +34,7 @@
             <div class="card">
                 <h2 id="hee2" onclick="funsad()">click me</h2>
                 <h2 onclick="addI()">i++</h2>
+                <button class="textExportButton">导出</button>
             </div>
         </div>
     </div>

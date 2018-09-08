@@ -38,7 +38,7 @@ var jqueryAlert = function (opts) {
     }
 
     var $modal = $("<div class='alert-modal'>")
-    var $container = $("<div class='alert-container animated'>");
+    var $container = $("<div class='· animated'>");
     var $title = $("<div class='alert-title'>" + option.title + "</div>");
     var $content = $("<div class='alert-content'>");
     var $buttonBox = $("<div class='alert-btn-box'>");
